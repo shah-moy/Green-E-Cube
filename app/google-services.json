@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "168545444727",
+    "project_id": "mapview-4320a",
+    "storage_bucket": "mapview-4320a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168545444727:android:ce88d697f6750d5cc17772",
+        "android_client_info": {
+          "package_name": "com.service.krishanmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168545444727-65f5eqaatbg7m339rqrfd9q100blgc2l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.service.krishanmap",
+            "certificate_hash": "6b4edc5df50f2178bb9838cc624e8ab2cfae7477"
+          }
+        },
+        {
+          "client_id": "168545444727-3iqcn5j2c0k1gvilsoe1920ooc89i3c6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe4VRPQX05-uYJYZ3NpYvj-KFmHTXZj40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168545444727-3iqcn5j2c0k1gvilsoe1920ooc89i3c6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
