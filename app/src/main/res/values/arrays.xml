@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="id_activityScreenTitles">
+
+        <item></item>
+        <item>My Fields</item>
+        <item>Work Group</item>
+        <item>Plant Disease</item>
+        <item>Set Order</item>
+        <item>Virtual Control</item>
+        <item>Profile</item>
+        <item>Setting</item>
+        <item/>
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="id_activityScreenIcons">
+
+        <item>@drawable/close</item>
+        <item>@drawable/my_field</item>
+        <item>@drawable/work_group</item>
+        <item>@drawable/photo</item>
+        <item>@drawable/set_order</item>
+        <item>@drawable/vc</item>
+        <item>@drawable/profile</item>
+        <item>@drawable/setting</item>
+        <item/>
+        <item>@drawable/logout</item>
+    </array>
+
+
+</resources>

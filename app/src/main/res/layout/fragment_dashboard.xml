@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_lime"
+    tools:context=".DashboardFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="false"
+        android:layout_alignParentBottom="false"
+        android:id="@+id/gec"
+        android:background="@color/green"
+        android:layout_marginBottom="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="My Field"
+            android:textColor="@color/light_green"
+            android:textSize="20sp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/addfield"
+            android:layout_width="50dp"
+            android:elevation="10dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/add_field">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical"
+        android:id="@+id/weabody"
+        android:background="@drawable/white_nocorners"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:id="@+id/cityname"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Area Name"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        //First box
+        <ImageView
+            android:id="@+id/whw_bar"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/white_nocorners"
+            android:elevation="4dp">
+        </ImageView>
+
+        //Titles Start here
+        <TextView
+            android:id="@+id/temperatuen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:text="Temperature"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="270dp"
+            android:layout_alignTop="@id/whw_bar"
+            android:layout_alignLeft="@id/whw_bar"
+            android:layout_alignRight="@id/whw_bar"
+            android:textColor="@color/blue"
+            android:textSize="13sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/humidityn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:elevation="6dp"
+            android:text="Humidity"
+            android:textStyle="bold"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="195dp"
+            android:layout_alignTop="@id/whw_bar"
+            android:layout_alignLeft="@id/temperatuen"
+            android:layout_alignRight="@id/whw_bar"
+            android:textColor="@color/blue"
+            android:textSize="13sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/pressureN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:elevation="6dp"
+            android:text="Pressure"
+            android:textStyle="bold"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="120dp"
+            android:layout_alignTop="@id/whw_bar"
+            android:layout_alignLeft="@id/humidityn"
+            android:layout_alignRight="@id/whw_bar"
+            android:textColor="@color/blue"
+            android:textSize="13sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/windspeedn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:text="Wind Speed"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="13sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignTop="@id/whw_bar"
+            android:layout_alignLeft="@id/pressureN"
+            android:layout_alignRight="@id/whw_bar">
+        </TextView>
+
+ //Title end here
+        //Icon Start here
+        <ImageView
+            android:id="@+id/weathericon"
+            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:elevation="6dp"
+            android:layout_marginTop="15dp"
+           android:layout_marginRight="15dp"
+            android:layout_alignTop="@id/temperatuen"
+            android:layout_alignLeft="@id/temperatuen"
+            android:layout_alignRight="@id/temperatuen"
+            android:background="@drawable/weather">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/humidityicon"
+            android:layout_marginLeft="12dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:elevation="6dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignTop="@id/humidityn"
+            android:layout_alignLeft="@id/humidityn"
+            android:layout_alignRight="@id/humidityn"
+            android:background="@drawable/humid">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/pressureicon"
+            android:layout_marginLeft="12dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:elevation="6dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignTop="@id/pressureN"
+            android:layout_alignLeft="@id/pressureN"
+            android:layout_alignRight="@id/pressureN"
+            android:background="@drawable/pressure">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/windicon"
+            android:layout_marginLeft="24dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:elevation="6dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignTop="@id/windspeedn"
+            android:layout_alignLeft="@id/windspeedn"
+            android:layout_alignRight="@id/windspeedn"
+            android:background="@drawable/wind">
+        </ImageView>
+        //Images end here
+
+        //data starts here
+
+        <TextView
+            android:id="@+id/temperatue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:text="Data"
+            android:textColor="@color/blue"
+            android:textSize="13dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:layout_alignRight="@id/weathericon"
+            android:layout_alignLeft="@id/weathericon"
+            android:layout_alignTop="@id/weathericon"
+            android:layout_alignBottom="@id/whw_bar">
+        </TextView>
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:text="Data"
+            android:textColor="@color/blue"
+            android:textSize="13dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:layout_alignRight="@id/humidityicon"
+            android:layout_alignLeft="@id/humidityicon"
+            android:layout_alignTop="@id/humidityicon"
+            android:layout_alignBottom="@id/whw_bar">
+        </TextView>
+
+        <TextView
+            android:id="@+id/pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:text="Data"
+            android:textColor="@color/blue"
+            android:textSize="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:layout_alignLeft="@id/humidity"
+            android:layout_alignRight="@id/winddirection"
+            android:layout_alignTop="@id/pressureicon"
+            android:layout_alignBottom="@id/whw_bar">
+        </TextView>
+
+        <TextView
+            android:id="@+id/windspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:text="Data"
+            android:textColor="@color/blue"
+            android:textSize="13dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:layout_marginLeft="110dp"
+            android:layout_alignRight="@id/whw_bar"
+            android:layout_alignLeft="@id/pressure"
+            android:layout_alignTop="@id/windicon"
+            android:layout_alignBottom="@id/whw_bar">
+        </TextView>
+        // first table data ends here
+
+        // second base titles
+
+        <TextView
+            android:id="@+id/winddirectionn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind Direction"
+            android:textStyle="bold"
+            android:textColor="#C4000000"
+            android:textSize="13sp"
+            android:layout_marginTop="45dp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:layout_alignTop="@id/windspeed"
+            android:layout_alignLeft="@id/whw_bar"
+            android:layout_alignRight="@id/whw_bar">
+        </TextView>
+
+        <TextView
+            android:id="@+id/weatherconditionn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather Condition"
+            android:textStyle="bold"
+            android:textColor="#C4000000"
+            android:textSize="13sp"
+            android:layout_marginTop="45dp"
+            android:gravity="left"
+            android:layout_marginLeft="25dp"
+            android:layout_alignTop="@id/temperatue"
+            android:layout_alignLeft="@id/whw_bar"
+            android:layout_alignRight="@id/whw_bar">
+        </TextView>
+
+     //Second titles end here
+        //Second data start here
+
+        <TextView
+            android:id="@+id/winddirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:text="Data"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:layout_alignRight="@id/winddirectionn"
+            android:layout_alignLeft="@id/winddirectionn"
+            android:layout_alignTop="@id/winddirectionn">
+        </TextView>
+
+        <TextView
+            android:id="@+id/weathercondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:text="Data"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:layout_alignRight="@id/weatherconditionn"
+            android:layout_alignLeft="@id/weatherconditionn"
+            android:layout_alignTop="@id/weatherconditionn">
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/greenbox"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical"
+        android:background="@drawable/white_nocorners"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+    //Second box
+        <ImageView
+            android:id="@+id/whw2_bar"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/white_nocorners"
+            android:elevation="4dp">
+        </ImageView>
+
+    //third titles
+        <TextView
+            android:id="@+id/greenindexn"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="Green Index HD"
+            android:textColor="@color/brown"
+            android:textSize="13dp"
+            android:elevation="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_alignTop="@id/whw2_bar"
+            android:layout_alignLeft="@id/whw2_bar"
+            android:layout_alignRight="@id/whw2_bar"/>
+
+        <ImageView
+            android:id="@+id/greenindexi"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/green_index"
+            android:elevation="6dp"
+            android:layout_marginTop="22dp"
+            android:layout_alignTop="@id/greenindexn"
+            android:layout_alignLeft="@id/greenindexn">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/cropn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:text="Detail of crop"
+            android:textColor="@color/brown"
+            android:textSize="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_alignLeft="@id/greenindexi"
+            android:layout_alignTop="@id/greenindexi"
+            android:layout_alignRight="@id/whw2_bar"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

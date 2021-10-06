@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <androidx.appcompat.widget.Toolbar
+           android:id="@+id/toolbar"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="#fff"
+           android:backgroundTint="@color/green"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.0"
+           app:titleTextColor="#00E8F5EE" />
+
+       <TextView
+           android:id="@+id/title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Green E-Cube"
+           android:textColor="@color/light_green"
+           android:textSize="20sp"
+           android:layout_marginBottom="10dp"
+           android:textStyle="bold"
+           app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="@+id/toolbar">
+
+       </TextView>
+
+       <LinearLayout
+           android:id="@+id/linearLayout"
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:background="@color/light_green"
+           android:elevation="2dp"
+           android:orientation="vertical"
+           app:layout_constraintVertical_bias="1"
+           app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="@+id/title">
+
+       </LinearLayout>
+
+<!--       <Button
+           android:id="@+id/wea_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:backgroundTint="@color/light_green"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="1"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="@+id/toolbar"
+           app:layout_constraintVertical_bias="0" />-->
+
+       <ImageView
+           android:id="@+id/bell"
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:layout_marginTop="5dp"
+           android:background="@drawable/bell"
+           android:layout_marginRight="40dp"
+           app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="1"
+           app:layout_constraintStart_toEndOf="@+id/title"
+           app:layout_constraintTop_toTopOf="@+id/title"
+           app:layout_constraintVertical_bias="0">
+
+       </ImageView>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    //for the fragment container
+
+</LinearLayout>

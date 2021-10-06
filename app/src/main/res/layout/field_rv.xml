@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="#6DFFFFFF" >
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/white_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <TextView
+            android:id="@+id/field_title"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="FieldName"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        //WEATHER HUMIDITY AND WIND BOX
+
+        <ImageView
+            android:id="@+id/whw_bar"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_nocorners"
+            android:elevation="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/field_title"
+            app:layout_constraintVertical_bias="0.0">
+
+        </ImageView>
+
+        //TITLES OF BOX 1
+
+        <TextView
+            android:id="@+id/humid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:elevation="8dp"
+            android:text="Humidity"
+            android:textColor="@color/blue"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/whw_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/whw_bar"
+            app:layout_constraintTop_toTopOf="@+id/whw_bar"
+            app:layout_constraintVertical_bias="0"></TextView>
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:text="Weather"
+            android:textColor="@color/blue"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/whw_bar"
+            app:layout_constraintEnd_toStartOf="@+id/humid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/humid"
+            app:layout_constraintVertical_bias="0"></TextView>
+
+        <TextView
+            android:id="@+id/wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:text="Wind"
+            android:textColor="@color/blue"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/whw_bar"
+            app:layout_constraintEnd_toEndOf="@+id/whw_bar"
+            app:layout_constraintStart_toEndOf="@+id/humid"
+            app:layout_constraintTop_toTopOf="@+id/humid"
+            app:layout_constraintVertical_bias="0">
+
+        </TextView>
+        //IMAGES OF BOX 1
+
+        <ImageView
+            android:id="@+id/humid_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/humid"
+            android:elevation="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="@+id/whw_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humid">
+
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/weather"
+            android:elevation="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="@+id/whw_bar"
+            app:layout_constraintEnd_toStartOf="@+id/humid_icon"
+            app:layout_constraintStart_toStartOf="@+id/whw_bar"
+            app:layout_constraintTop_toBottomOf="@+id/weather">
+
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/wind_icon"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/wind"
+            android:elevation="8dp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="@+id/whw_bar"
+            app:layout_constraintEnd_toEndOf="@+id/whw_bar"
+            app:layout_constraintStart_toEndOf="@+id/humid_icon"
+            app:layout_constraintTop_toTopOf="@+id/humid_icon">
+
+        </ImageView>
+
+        //Data of each parameters position
+
+        <TextView
+            android:id="@+id/humidvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:text="Data"
+            android:textColor="@color/blue"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="@+id/whw_bar"
+            app:layout_constraintEnd_toEndOf="@+id/whw_bar"
+            app:layout_constraintStart_toStartOf="@+id/whw_bar"
+            app:layout_constraintTop_toBottomOf="@+id/humid_icon">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/weathervalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:text="Data"
+            android:textColor="@color/blue"
+            android:textSize="10dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="@+id/whw_bar"
+            app:layout_constraintEnd_toStartOf="@+id/humidvalue"
+            app:layout_constraintStart_toStartOf="@+id/whw_bar"
+            app:layout_constraintTop_toBottomOf="@+id/weather_icon">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/windvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:text="Data"
+            android:textColor="@color/blue"
+            android:textSize="10dp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="@+id/whw_bar"
+            app:layout_constraintEnd_toEndOf="@+id/whw_bar"
+            app:layout_constraintStart_toEndOf="@+id/humidvalue"
+            app:layout_constraintTop_toTopOf="@+id/humidvalue">
+
+        </TextView>
+
+        //Second Box
+
+        <ImageView
+            android:id="@+id/plant_info"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_nocorners"
+            android:elevation="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whw_bar"
+            app:layout_constraintVertical_bias="0">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/green_ind"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="Green Index HD"
+            android:textColor="@color/brown"
+            android:textSize="13dp"
+            android:elevation="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toBottomOf="@+id/plant_info"
+            app:layout_constraintEnd_toEndOf="@+id/plant_info"
+            app:layout_constraintStart_toStartOf="@+id/plant_info"
+            app:layout_constraintTop_toTopOf="@+id/plant_info">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/green_ind_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/green_index"
+            android:elevation="8dp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toBottomOf="@+id/plant_info"
+            app:layout_constraintEnd_toEndOf="@+id/plant_info"
+            app:layout_constraintStart_toStartOf="@+id/plant_info"
+            app:layout_constraintTop_toBottomOf="@+id/green_ind" />
+
+        <TextView
+            android:id="@+id/green_ind_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:text="Detail of crop"
+            android:textColor="@color/brown"
+            android:textSize="10dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/plant_info"
+            app:layout_constraintEnd_toEndOf="@+id/plant_info"
+            app:layout_constraintStart_toEndOf="@+id/green_ind_img"
+            app:layout_constraintTop_toTopOf="@+id/green_ind_img">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

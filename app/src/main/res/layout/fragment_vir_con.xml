@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VirConFragment"
+    android:background="@color/bg_lime">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="false"
+        android:layout_alignParentBottom="false"
+        android:id="@+id/vcc"
+        android:background="@color/green"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Virtual Control"
+            android:textColor="@color/light_green"
+            android:textSize="20sp">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/vcbody">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:id="@+id/tempbtn"
+            android:text="Temperature"
+            android:gravity="center"
+            android:layout_marginVertical="100dp"
+            android:layout_marginHorizontal="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true">
+        </Button>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:id="@+id/blowbtn"
+            android:text="Blower"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:layout_alignTop="@id/tempbtn"
+            android:layout_alignRight="@id/tempbtn"
+            android:layout_alignLeft="@id/tempbtn">
+        </Button>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:id="@+id/waterbtn"
+            android:text="Water"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:layout_alignTop="@id/blowbtn"
+            android:layout_alignRight="@id/blowbtn"
+            android:layout_alignLeft="@id/blowbtn">
+        </Button>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:id="@+id/camerabtn"
+            android:text="Camera"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:layout_alignTop="@id/waterbtn"
+            android:layout_alignRight="@id/waterbtn"
+            android:layout_alignLeft="@id/waterbtn">
+        </Button>
+    </RelativeLayout>
+
+</FrameLayout>
